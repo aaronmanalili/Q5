@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!-- Q5 by Aaron Manalili -->
+<!-- CSIT 337-02-->
+<!-- HW2 -->
+
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <title>Q5</title>
+        <style type = "text/css">
+            .ball1{
+               
+                display:block;
+                background: red;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                margin-right: 120px;
+                margin-top: 40px;
+                background: radial-gradient(at top left, white, red);
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                animation-fill-mode: forwards;
+
+                -webkit-animation: diagonal1 7s ease 0s normal forwards;
+                -moz-animation: diagonal1 7s ease 0s normal forwards;
+                animation: diagonal1 7s ease 0s normal forwards;
+
+            }
+
+            @-webkit-keyframes diagonal1{
+                0% { transform: translatex(-50px) translatey(-50px) }
+               100% { transform: translatex(1750px) translatey(1000px) }
+            }
+            @-moz-keyframes diagonal1{
+                0% { transform: translatex(-50px) translatey(-50px) } 
+               100% { transform: translatex(1750px) translatey(1000px) }
+            }
+            @keyframes diagonal1{
+                0% { transform: translatex(-50px) translatey(-50px) }
+               100% { transform: translatex(1750px) translatey(1000px) }
+            }
+
+            .ball2{
+                display:block;
+                background: green;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                margin-right: 120px;
+                margin-top: 40px;
+                background: radial-gradient(at top right, white, green);
+                
+                position: absolute;
+                top: 0;
+                right: 0;
+                animation-fill-mode: forwards;
+
+                -webkit-animation: diagonal2 7s ease 0s normal forwards;
+                -moz-animation: diagonal2 7s ease 0s normal forwards;
+                animation: diagonal2 7s ease 0s normal forwards;
+          
+            }
+
+            @-webkit-keyframes diagonal2{
+                0% { transform: translatex(-50px) translatey(-50px) }
+               100% { transform: translatex(-1625px) translatey(1000px) }
+            }
+            @-moz-keyframes diagonal2{
+                0% { transform: translatex(-50px) translatey(-50px) }
+               100% { transform: translatex(-1625px) translatey(1000px) }
+            }
+            @keyframes diagonal2{
+                0% { transform: translatex(-50px) translatey(-50px) }
+               100% { transform: translatex(-1625px) translatey(1000px) }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "ball1" id = "red"></div>
+        <div class = "ball2" id = "green"></div>
+    </body>
+</html>
